@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+<title>Bootstrap Example</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+<nav class="navbar navbar-default navbar-top" style="background-color:#efefef; height:100px;">
+  <div class="container-fluid">
+ 
+  <div class="navbar-header">
+  <a class="navbar-brand" href="#"><img src="images/Capture.jpg" style="height:60px;margin-top:2px;;"></a>
+  </div>
+  <div class="col-md-4" style="margin-top:20px;">
+   <form class="navbar-form navbar-left">
+  <div class="form-group form-inline has-feedback">
+  
+  <input type="text" class="form-control" id='n' style="border-radius:2rem" placeholder="Search">
+   <span class="glyphicon glyphicon-search form-control-feedback"></span>
+   </div>
+   
+  </form>
+  </div>
+  <div class="navbar-form navbar-right form-group form-inline">
+  <input class="btn btn-default" type="button" value="Logout" style="margin-top:20px; margin-right:20px; background-color:#BEBEBE;border-radius:2rem; width:125px">
+  </div>
+  <div class="navbar-form navbar-right form-group form-inline">
+  <h5 style="margin-top:30px;">Welcome,Admin <span><</span><span>Name</span><span>></span> ..</h5>
+  </div>
+  <div class="navbar-form navbar-right form-group form-inline">
+  <span class="glyphicon glyphicon-bell" style="margin-top:30px; "></span>
+  </div>
+  </div>
+  </nav>
+  <div class="container-fluid">
+  <div class="row">
+  <div class="col-md-2">
+  <div class="well">
+  <div class="panel-group panel-default">
+    <pre class="text-left" style="background-color:#C8C8C8"> <span class="lead" style="color:white;text-size:30px;">PROFILE</span></pre>        
+  <div class="panel-body">
+  <center>
+  <div class="well-sm" style="margin-left:30px;margin-right_30px;margin-top:10px;margin-bottom:30px;background-color:#C8C8C8">
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  </div>
+  <h2>Helen Cho</h2>
+  <h3>ID<br/><small>GRZLY1234</small></h3>
+  <br/>
+  <h3>Designation<br/><small>Sr.Admin</small></h3>
+  <br/>
+  <h3>Office<br/><small>NYC,NY,USA</small></h3>
+  </div>
+  </div>
+  </div>
+  </div>
+  <div class="container-fluid">
+  
+  <div class="col-md-10">
+  <ul class="nav nav-tab nav-justified" style="background-color:#BEBEBE; height:45px;">
+  <li class="active" ><a data-toggle="pill" href="#products" style="color:black">Products</a></li>
+  <li style="text-color:black"><a data-toggle="pill" href="#vendors" style="color:black">Vendors</a></li>
+  </ul>
+  <div class="tab-content">
+  <div id="products" class="tab-pane fade in active">
+  <div class="form-group form-inline">
+ <div class="btn">
+  <button type="button" class="btn disabled dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" style="border-radius:2rem; margin-top:15px;width:120%;">Choose Action <span class="caret" style="margin-left:15px;"></span> </button>
+  </div>
+  <div class="form-group has-feedback">
+  
+  <input type="text" class="form-control" id='n' style="border-radius:2rem; margin-top:15px; margin-left:30px;" placeholder="Search">
+   <span class="glyphicon glyphicon-search form-control-feedback" style="margin-top:15px;"></span>
+   </div>
+   <div class="form-group">
+   <div class="btn-group">
+  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" style="border-radius:2rem; margin-top:15px;width:120%;margin-left:15px;"><span style="text-align:left">Sort by</span> <span class="caret" style="margin-left:20px;"></span> </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a class="dropdown-item" href="#">Link 1</a></li>
+    <li><a class="dropdown-item" href="#">Link 2</a></li>
+  </ul>
+  </div>
+  </div>
+ <div class="form-group">
+ <button type="button" class="btn" style="border-radius:2rem;margin-top:15px;margin-left:700px; background-color:grey">Add Product</button>
+ 
+ </div>
+ <table class="table table-responsive table-condensed" style="margin-top:50px;margin-left:40px;">
+ <thead>
+ <tr>
+ <th class="text-center" style="border:non">Product List</th>
+ <th>Brand</th>
+ <th>Category</th>
+ <th>Rating</th>
+  <th></th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td style="border-left:none;"><label class="containe">Trimmer
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label></td>
+ <td>Philips</td>
+ <td>Personal Care</td>
+ <td>4.7</td>
+ <td><button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px;margin-left:20px;">View</button>
+ <button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px; margin-left:20px;">Block</button>
+ <button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px;margin-left:20px;">Remove</button></td>
+ </tr>
+ <tr>
+<td><label class="containe">Shaver
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label></td>
+<td>Barun</td>
+<td>Personal Care</td>
+<td>4.8</td>
+<td><button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px;margin-left:20px;">View</button>
+ <button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px; margin-left:20px;">Block</button>
+ <button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px;margin-left:20px;">Remove</button></td>
+</tr>
+<tr>
+<td><label class="containe">MacBook Pro
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label></td>
+<td>Apple</td>
+<td>Laptops</td>
+<td>4.9</td>
+ <td><button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px;margin-left:20px;">View</button>
+ <button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px; margin-left:20px;">Block</button>
+ <button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px;margin-left:20px;">Remove</button></td>
+</tr>
+<tr>
+<td><label class="containe">iMac 27
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label></td>
+<td>Apple</td>
+<td>Laptops</td>
+<td>4.6</td>
+ <td><button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px;margin-left:20px;">View</button>
+ <button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px; margin-left:20px;">Block</button>
+ <button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px;margin-left:20px;">Remove</button></td>
+</tr>
+<tr>
+<td><label class="containe">Micro Pens
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label> </td>
+<td>Sakura Pigma</td>
+<td>Art Supplies</td>
+<td>4.1</td>
+ <td><button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px;margin-left:20px;">View</button>
+ <button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px; margin-left:20px;">Block</button>
+ <button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px;margin-left:20px;">Remove</button></td>
+</tr>
+<tr>
+<td><label class="containe">Paint Maker
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label></td>
+<td>Copic</td>
+<td>Art Supplies</td>
+<td>4.2</td>
+ <td><button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px;margin-left:20px;">View</button>
+ <button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px; margin-left:20px;">Block</button>
+ <button type="button" class="btn disabled" style="border-radius:2rem;background-color:#e1e1e1;width:150px;margin-left:20px;">Remove</button></td>
+</tr>
+ </table>
+ </div>
+ 
+
+
+  </div>
+  <div id="vendors" class="tab-pane">
+  <p>hi</p></div>
+  </div>
+  </div>
+  
+  </div>
+  
+  </div>
+  </body>
+  </html>
